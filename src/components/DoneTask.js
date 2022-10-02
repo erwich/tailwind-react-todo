@@ -10,7 +10,7 @@ const DoneTask = ({ text, value, id }) => {
   const dispatch = useDispatch()
   value = value || 1
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap py-1">
       <FontAwesomeIcon
         className="py-1 px-1 text-slate-500"
         icon={faRotateLeft}

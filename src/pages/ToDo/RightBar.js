@@ -5,7 +5,7 @@ import Header from "../../components/Header"
 
 const DoneBar = () => {
   const doneTasks = useSelector(({todo}) => todo.tasks.filter(task => task.done))
-  const points = doneTasks.reduce( (pts, {value}) => pts + value, 0)
+  const points = doneTasks.reduce( (pts, {value}) => pts + parseInt(value), 0)
   return (
     <div>
       <Header text="Things Done 🎉" />
@@ -13,7 +13,9 @@ const DoneBar = () => {
         <DoneTask text={ task.content } value={ task.value } id={ task.id } />
       )}
       {points > 0 ? (
-        <h2 className="py-4 px-4 text-green-500 font-bold">{points} 🪙</h2>
+        <div className="py-4 px-4">
+          <h2 className="font-bold dark:text-slate-100">Total: <span className="text-green-500">{points}🪙</span></h2>
+        </div>
       ) : ""}
     </div>
   )

@@ -47,7 +47,7 @@ const AddTask = () => {
             What needs doing?
           </label>
           <textarea
-            className="w-80 h-40 dark:bg-slate-700 dark:text-slate-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="w-96 h-40 dark:bg-slate-700 dark:text-slate-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Task to tackle"
             onChange={ e => { setText( e.target.value ) }}
             value={ text }

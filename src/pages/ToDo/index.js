@@ -17,11 +17,11 @@ const ToDo = () => {
   const getColors = categoryName => categories.filter( category => category.name === categoryName )[0].colors
 
   return (
-    <div className="flex flex-row py-4">
-      <div className="basis-1/4">
+    <div className="flex flex-col lg:flex-row flex-wrap py-4">
+      <div className="px-4">
         <LeftBar />
       </div>
-      <div className="basis-1/2">
+      <div className="basis-1/2 px-4">
         <Header text="Things to Do" />
         <div className="flex gap-x-2 gap-y-2 flex-wrap">
           {tasks.map(({ id, content, due, category, value, done }) => (
@@ -39,7 +39,7 @@ const ToDo = () => {
           ))}
         </div>
       </div>
-      <div className="basis-1/4">
+      <div className="px-4">
         <RightBar />
       </div>
     </div>

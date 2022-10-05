@@ -5,7 +5,9 @@ import AddTask from '../../components/AddTask'
 const AddBar = () => {
   return (
     <div>
-      <Header text="What Doin'" />
+      <Header 
+        text="What Doin'" 
+      />
       <div className="flex gap-x-1">
         <AddTask />
         <button

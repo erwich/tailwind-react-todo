@@ -18,10 +18,10 @@ const ToDo = () => {
 
   return (
     <div className="flex flex-col lg:flex-row flex-wrap py-4">
-      <div className="px-4">
+      <div className="px-4 py-4 w-full 2xl:w-96">
         <LeftBar />
       </div>
-      <div className="basis-1/2 px-4">
+      <div className="2xl:basis-1/2 px-4 py-4 w-full">
         <Header text="Things to Do" />
         <div className="flex gap-x-2 gap-y-2 flex-wrap">
           {tasks.map(({ id, content, due, category, value, done }) => (
@@ -39,7 +39,7 @@ const ToDo = () => {
           ))}
         </div>
       </div>
-      <div className="px-4">
+      <div className="px-4 py-4 w-full 2xl:w-96">
         <RightBar />
       </div>
     </div>

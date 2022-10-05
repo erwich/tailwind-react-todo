@@ -67,10 +67,13 @@ export const todoSlice = createSlice({
     uncompleteTask: (state, action) => {
       state.tasks = state.tasks.map( task => task.id === action.payload ? { ...task, done: false } : task )
     },
+    deleteTask: (state, action) => {
+      state.tasks = state.tasks.filter( task => task.id !== action.payload )
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { addTask, completeTask, uncompleteTask } = todoSlice.actions
+export const { addTask, completeTask, uncompleteTask, deleteTask } = todoSlice.actions
 
 export default todoSlice.reducer

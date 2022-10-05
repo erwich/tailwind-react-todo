@@ -1,10 +1,10 @@
 import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faRotateLeft } from "@fortawesome/free-solid-svg-icons"
+import { faRotateLeft, faX } from "@fortawesome/free-solid-svg-icons"
 import { useDispatch } from "react-redux"
 
-import { uncompleteTask } from '../state/todo'
+import { uncompleteTask, deleteTask } from '../state/todo'
 
 const DoneTask = ({ text, value, id }) => {
   const dispatch = useDispatch()
@@ -16,6 +16,13 @@ const DoneTask = ({ text, value, id }) => {
         icon={faRotateLeft}
         onClick={ () => {
           dispatch(uncompleteTask(id))
+        }}
+      />
+      <FontAwesomeIcon
+        className="py-1 px-1 text-red-500 mr-2"
+        icon={faX}
+        onClick={ () => {
+          dispatch(deleteTask(id))
         }}
       />
       <div

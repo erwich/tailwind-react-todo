@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tailwind-react-todo/static/css/main.f4779e1a.css",
-    "main.js": "/tailwind-react-todo/static/js/main.79168e0a.js",
+    "main.css": "/tailwind-react-todo/static/css/main.b97d9212.css",
+    "main.js": "/tailwind-react-todo/static/js/main.53f9cfcc.js",
     "static/js/787.43af38c8.chunk.js": "/tailwind-react-todo/static/js/787.43af38c8.chunk.js",
     "static/media/logo.svg": "/tailwind-react-todo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tailwind-react-todo/index.html",
-    "main.f4779e1a.css.map": "/tailwind-react-todo/static/css/main.f4779e1a.css.map",
-    "main.79168e0a.js.map": "/tailwind-react-todo/static/js/main.79168e0a.js.map",
+    "main.b97d9212.css.map": "/tailwind-react-todo/static/css/main.b97d9212.css.map",
+    "main.53f9cfcc.js.map": "/tailwind-react-todo/static/js/main.53f9cfcc.js.map",
     "787.43af38c8.chunk.js.map": "/tailwind-react-todo/static/js/787.43af38c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4779e1a.css",
-    "static/js/main.79168e0a.js"
+    "static/css/main.b97d9212.css",
+    "static/js/main.53f9cfcc.js"
   ]
 }

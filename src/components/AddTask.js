@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import Modal from "../components/Modal"
 
-import { addTask } from '../state/todo'
+import { addTask } from '../features/todo'
 
 const AddTask = () => {
   const categories = useSelector(({todo}) => todo.categories)

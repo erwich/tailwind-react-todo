@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faRotateLeft, faX } from "@fortawesome/free-solid-svg-icons"
 import { useDispatch } from "react-redux"
 
-import { uncompleteTask, deleteTask } from '../state/todo'
+import { uncompleteTask, deleteTask } from '../features/todo'
 
 const DoneTask = ({ text, value, id }) => {
   const dispatch = useDispatch()

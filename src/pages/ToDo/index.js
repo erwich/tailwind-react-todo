@@ -6,7 +6,7 @@ import LeftBar from "./LeftBar"
 import RightBar from "./RightBar"
 import Header from "../../components/Header"
 
-import { completeTask } from "../../state/todo"
+import { completeTask } from "../../features/todo"
 
 const ToDo = () => {
   const tasks = useSelector(({todo}) => todo.tasks)
